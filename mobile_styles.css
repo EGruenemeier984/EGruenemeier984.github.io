@@ -1,0 +1,171 @@
+/* This is a media query for screens the have a width of 1024px or lower */
+@media screen and (max-width:990px) {
+    .custNav {
+        display: none;
+    }
+
+}
+
+/* This effects the screens that are smaller than 580 pixels  */
+@media screen and (max-width: 580px) {
+    .nav {
+        display: none;
+    }
+
+    .custNav {
+        display: block;
+    }
+
+    .cardCustom {
+        width: 100%;
+        margin: .5em;
+    }
+
+    .sideImage {
+        margin-top: 1em;
+    }
+
+    .contentdiv {
+        margin: 1em;
+    }
+
+    .col-sm-8 {
+        margin: 1em;
+    }
+}
+
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ OUTSOURCED
+ */
+
+body {
+    overflow-x: hidden;
+}
+
+#MobileLogo {
+    float: right;
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding: 50px 0px 0px 250px;
+}
+
+#sidebar-wrapper {
+
+    z-index: 1000;
+
+    position: fixed;
+
+    width: 0;
+
+    height: 100%;
+
+    margin-right: -250px;
+
+    overflow-y: auto;
+
+    background: #3B3C40;
+
+    -webkit-transition: all 0.5s ease;
+
+    -moz-transition: all 0.5s ease;
+
+    -o-transition: all 0.5s ease;
+
+    left: 250px;
+
+    transition: all 0.5s ease;
+
+    margin-left: -250px;
+
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 100%;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: 0px;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2em;
+    margin-top: .5em;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-right: 0;
+    }
+
+    #wrapper.toggled {
+        padding-left: 250px;
+    }
+
+    #sidebar-wrapper {
+        width: 0;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 300px;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}

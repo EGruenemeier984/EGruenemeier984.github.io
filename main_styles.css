@@ -1,0 +1,284 @@
+/* This effects evreything on the page and sets the margin padding to 0 along with setting the box-sizing to broder box. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* This effects the body tag and sets the background color and text color. */
+body {
+    background-color: #021526;
+    color: white;
+}
+
+/* This effects the class of custNav and sets its display to none and the background color to an orange. */
+.custNav {
+    display: none;
+    background: #D9D1C7;
+}
+
+.navLink {
+    color: #D9D1C7;
+}
+
+/* This effect the class of logoNav and sets its margin-left  */
+.logoNav {
+    margin-left: 1.5em;
+}
+
+/* This effects the class of carousel and sets the border-radius to 2em. */
+.carousel {
+    border-radius: 2em;
+}
+
+/* This effects the class of cardCustom and sets the width to 48% and defines the background color and the border-radius and the margins. */
+.cardCustom {
+    width: 48%;
+    background-color: #D9D1C7;
+    border-radius: 1em;
+    margin: 1%;
+}
+
+/* This effects the class of customNav and sets the background color to the orange color. */
+.customNav {
+    background-color: #D9D1C7;
+}
+
+/* This effects the class of container and defines the margin-top. */
+.container {
+    margin-top: 4em;
+}
+
+/* This effects all hr tags and defines background-color, border, width, and margins. */
+hr {
+    background-color: #D9D1C7;
+    border: 2px #D9D1C7 solid;
+    width: 48px;
+    margin: 10px 0 20px;
+}
+
+/* This effects the footer and defines its background color. */
+footer {
+    background-color: #D9D1C7;
+    bottom: 0;
+    width: 100%;
+}
+
+/* This effects the class of iconCustom and defines the text-align and the top margins */
+.iconCustom {
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* This effects the class of navLink and sets the text-decoration to none and sets the color to white. */
+.navLink {
+    text-decoration: none;
+    color: white;
+}
+
+/* This effects the navLinks when hovered over and changes the color */
+.navLink:hover {
+    color: #c2bbb4;
+    text-decoration: none;
+}
+
+/* This effects the class of sideImage and defines the border-radius and the top margins. */
+.sideImage {
+    border-radius: 2em;
+    margin-top: 4em;
+}
+
+/* This effects the id of top button and defines postion along with color and its transition. */
+#topButton {
+    display: inline-block;
+    background-color: #011826;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+/* This effect the top button after over and changes its contet and sets its font to fontAwsome library  */
+#topButton::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+/* This effect the top button when hovered over and changes the cursor + background color. */
+#topButton:hover {
+    cursor: pointer;
+    background-color: #c2bbb4;
+}
+
+/* This effects the id of topButton when its active and sets the backgorind color. */
+#topButton:active {
+    background-color: #555;
+}
+
+/* This effect the id of topButton with the class of show and changes the opacity to 1 plus sets it to visible */
+#topButton.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* This effects the id of map and changes its width and height and sets it backgorund color */
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+
+/* This effects the a tags and gets rid of underline and sets the text to white. */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Effect when hovered over and chages color to a hex number */
+a:hover {
+    text-decoration: none;
+    color: #011826;
+}
+
+/* This effects the class of btn and defines the background color, border, text color, padding, cursor type, and the font-size. */
+.btn {
+    background-color: #D9D1C7;
+    border: none;
+    color: #03588C;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: #afa9a3;
+}
+
+blockquote > p {
+    color: #03588C;
+}
+
+footer p {
+    color: #03588C;
+}
+
+/* This changes the border and background color when the class is active. */
+.list-group-item.active {
+    background-color: #D9D1C7;
+    border-color: #D9D1C7;
+}
+
+/* This effects the list items in the id of count and sets the display, font-size, the list style, padding, and the text transform. */
+#count li {
+    display: inline-block;
+    font-size: .75em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+/* This effects the span elements in the list items in the id of count and sets its font size plus its display type. */
+#count li span {
+    display: block;
+    font-size: 2rem;
+}
+
+/* This effects the id of countdown and sets the text to align to the center. */
+#countdown {
+    text-align: center;
+}
+
+/* This effects the class of loader and defines its postion and its transition value. */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    transition: 1s;
+}
+
+/* This effects the class of span and changes the postion to be absolute along with transforming it and also defines the animation */
+.span {
+    position: absolute;
+    transform: translate(-50%, 50%);
+    width: 120px;
+    height: 120px;
+    top: 35%;
+    border: 5px solid #535252;
+    z-index: 1;
+    animation: animar 2.5s linear infinite;
+}
+
+/* This effect the span class beforw and sets content to nothing and also defines the animation. */
+.span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #D9D1C7;
+    animation: animarbg 2.5s linear infinite;
+}
+
+/* These keyframes represent different transfomations at different points in time for the animar animation */
+@keyframes animar {
+    0% {
+        transform: translate(-50%, 50%) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(-50%, 50%) rotate(180deg);
+    }
+
+    50% {
+        transform: translate(-50%, 50%) rotate(180deg);
+    }
+
+    75% {
+        transform: translate(-50%, 50%) rotate(360deg);
+    }
+
+    100% {
+        transform: translate(-50%, 50%) rotate(360deg);
+    }
+}
+
+/* This keyframe sets the height at different points in time. */
+@keyframes animarbg {
+    0% {
+        height: 0;
+    }
+
+    25% {
+        height: 0;
+    }
+
+    50% {
+        height: 100%;
+    }
+
+    75% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0;
+    }
+}
